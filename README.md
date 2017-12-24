@@ -1,2 +1,2 @@
-# kanekes
-Kaneses is one of base theme for bantenprov application
+# Kanekes
+Kanekes is one of laravel base theme for bantenprov application
