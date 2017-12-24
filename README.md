@@ -1,5 +1,5 @@
 # Kanekes
-Kaneses is one of laravel base theme for bantenprov application
+Kanekes is one of laravel base theme for bantenprov application
 
 
 ## How to install
