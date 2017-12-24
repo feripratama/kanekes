@@ -1,0 +1,23 @@
+{
+  "description": "Kanekes Theme for Laravel",
+  "name": "bantenprov/kanekes",
+  "type": "project",
+  "homepage": "https://github.com/bantenprov/kanekes",
+  "authors": [
+    {
+      "name": "bantenprov",
+      "email": "developer.bantenprov@gmail.com",
+      "role": "developer"
+    }
+  ],
+  "license": "MIT",
+  "support": {
+    "source": "https://github.com/bantenprov/kanekes,",
+    "issues": "https://github.com/bantenprov/kanekes/issues",
+    "wiki": "https://github.com/bantenprov/kanekes/wiki"
+  },
+  "require": {
+    "php": ">=5.4.0",
+    "laravel/laravel": "5.4.*"
+  }
+}
