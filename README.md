@@ -27,7 +27,6 @@ $ composer create-project bantenprov/kanekes "dev-master"
 ### publish the package's assets to public folder
 
 ```php
-$ php artisan vendor:publish --tag=materializecss --force
 $ php artisan vendor:publish --provider="Eusonlito\LaravelMeta\MetaServiceProvider"
 ```
 
