@@ -24,6 +24,12 @@ $ composer create-project bantenprov/kanekes "dev-master"
     'Meta'    => Eusonlito\LaravelMeta\Facade::class,
 ];
 ```
+### publish the package's assets to public folder
+```php
+$ php artisan vendor:publish --tag=materializecss --force
+$ php artisan vendor:publish --provider="Eusonlito\LaravelMeta\MetaServiceProvider"
+
+```
 ## Feature:
 - Materialize from [skydiver/laravel-materialize-css](https://github.com/skydiver/laravel-materialize-css).
 - Metatag from [eusonlito/laravel-Meta](https://github.com/eusonlito/laravel-Meta).
