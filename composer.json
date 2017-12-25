@@ -1,26 +1,61 @@
 {
-  "description": "Kanekes Theme for Laravel",
-  "name": "bantenprov/kanekes",
-  "type": "project",
-  "homepage": "https://github.com/bantenprov/kanekes",
-  "authors": [
-    {
-      "name": "bantenprov",
-      "email": "developer.bantenprov@gmail.com",
-      "role": "developer"
+    "name": "bantenprov/kanekes",
+    "description": "Kanekes Theme for Laravel",
+    "type": "project",
+    "homepage": "https://github.com/bantenprov/kanekes",
+    "authors": [{
+        "name": "bantenprov",
+        "email": "developer.bantenprov@gmail.com",
+        "role": "developer"
+    }],
+    "license": "MIT",
+    "support": {
+      "source": "https://github.com/bantenprov/kanekes,",
+      "issues": "https://github.com/bantenprov/kanekes/issues",
+      "wiki": "https://github.com/bantenprov/kanekes/wiki"
+    },
+    "require": {
+        "php": ">=5.6.4",
+        "laravel/framework": "5.4.*",
+        "laravel/tinker": "~1.0"
+    },
+    "require-dev": {
+        "fzaninotto/faker": "~1.4",
+        "mockery/mockery": "0.9.*",
+        "phpunit/phpunit": "~5.7"
+    },
+    "autoload": {
+        "classmap": [
+            "database"
+        ],
+        "psr-4": {
+            "App\\": "app/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "post-root-package-install": [
+            "php -r \"file_exists('.env') || copy('.env.example', '.env');\""
+        ],
+        "post-create-project-cmd": [
+            "php artisan key:generate"
+        ],
+        "post-install-cmd": [
+            "Illuminate\\Foundation\\ComposerScripts::postInstall",
+            "php artisan optimize"
+        ],
+        "post-update-cmd": [
+            "Illuminate\\Foundation\\ComposerScripts::postUpdate",
+            "php artisan optimize"
+        ]
+    },
+    "config": {
+        "preferred-install": "dist",
+        "sort-packages": true,
+        "optimize-autoloader": true
     }
-  ],
-  "license": "MIT",
-  "support": {
-    "source": "https://github.com/bantenprov/kanekes,",
-    "issues": "https://github.com/bantenprov/kanekes/issues",
-    "wiki": "https://github.com/bantenprov/kanekes/wiki"
-  },
-  "require": {
-    "php": ">=5.4.0",
-    "laravel/laravel": "5.4.*",
-    "skydiver/laravel-materialize-css": "dev-master",
-    "eusonlito/laravel-meta": "3.1.*",
-    "spatie/schema-org": "dev-master"
-  }
 }
