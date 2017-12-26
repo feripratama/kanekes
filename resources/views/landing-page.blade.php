@@ -27,7 +27,7 @@
                     <a class="block-image-bg caption-bottom" href="#non" style="background-image: url({{ asset('images/baduy/6.jpg') }});">
                         <div class="block-image-caption">
                             <h3 class="block-image-title">Etimologi 1</h3>
-                            <p class="block-image-description">Sebutan "Baduy" merupakan sebutan yang diberikan oleh penduduk luar kepada kelompok masyarakat tersebut, berawal dari sebutan para peneliti Belanda yang agaknya mempersamakan mereka dengan kelompok Arab Badawi yang merupakan masyarakat yang berpindah-pindah (nomaden).</p>
+                            <p class="block-image-description">Sebutan "Baduy" merupakan sebutan yang diberikan oleh penduduk luar wilayah ini kepada kelompok masyarakat tersebut, berawal dari sebutan para peneliti Belanda yang agaknya mempersamakan mereka dengan kelompok Arab Badawi yang merupakan masyarakat yang berpindah-pindah (nomaden).</p>
                         </div>
                     </a><!-- /.block-image-bg -->
                 </div><!-- /.block-image -->
