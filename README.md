@@ -40,6 +40,6 @@ $ php artisan vendor:publish --provider="Eusonlito\LaravelMeta\MetaServiceProvid
 
 ## Feature:
 
-- Materialize CSS [dogfalo/materialize](https://github.com/dogfalo/materialize/).
+- Bootstrap [twbs/bootstrap](https://github.com/twbs/bootstrap/).
 - Metatag from [eusonlito/laravel-Meta](https://github.com/eusonlito/laravel-Meta).
 - Schema.org from [spatie/schema-org](https://github.com/spatie/schema-org).
