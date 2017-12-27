@@ -5,6 +5,12 @@ import 'bootstrap';
 
   $(function () {
 
+    //== Toggle sidebar admin
+
+    $('[data-toggle="admin-sidebar"]').on('click', function () {
+      $('.admin-wrapper').toggleClass('is-sidebar-hidden')
+    });
+
     //== Initialize Bootstrap tooltip with `data-toggle="tooltip"`.
 
     $('[data-toggle="tooltip"]').tooltip();
