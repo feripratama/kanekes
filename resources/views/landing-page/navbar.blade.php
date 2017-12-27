@@ -12,6 +12,9 @@
                 <li class="nav-item">
                     <a class="nav-link" href="https://github.com/bantenprov/kanekes/issues">Issues</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/admin">Admin page</a>
+                </li>
             </ul>
         </div>
     </div>

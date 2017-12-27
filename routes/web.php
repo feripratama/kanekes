@@ -5,7 +5,7 @@ Route::get('/', function () {
 });
 
 Route::get('/admin', function () {
-    return view('admin/index');
+    return view('admin');
 });
 
 Route::get('/about', function () {

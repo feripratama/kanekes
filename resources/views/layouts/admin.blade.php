@@ -12,14 +12,18 @@
         <link rel="stylesheet" href="{{ asset('css/app.css') }}">
         <link rel="stylesheet" href="{{ asset('fonts/font-awesome/css/font-awesome.min.css') }}">
     </head>
-    <body>
-        @include('admin.navbar')
+    <body class="page-admin">
+        <div class="admin-wrapper active">
+            @include('admin.sidebar')
 
-        @include('admin.sidebar')
+            <div class="admin-content-wrap">
+                @include('admin.navbar')
 
-        @include('admin.main')
+                @include('admin.main')
 
-        @include('admin.footer')
+                @include('admin.footer')
+            </div>
+        </div>
 
         <script src="{{ asset('js/app.js') }}"></script>
     </body>

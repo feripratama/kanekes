@@ -1,0 +1,207 @@
+.page-admin {
+  background-color: #222;
+}
+
+//
+// Page wrapper
+//
+
+.admin-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+//
+// Content wrapper
+//
+
+.admin-content-wrap {
+  position: relative;
+  transition: all .25s ease-out;
+
+  @include media-breakpoint-up(sm) {
+    & {
+      margin-left: 230px;
+    }
+
+    .is-sidebar-hidden & {
+      margin-left: 0;
+    }
+  }
+
+  @include media-breakpoint-down(sm) {
+    & {
+      left: 0;
+      margin-left: 0;
+    }
+
+    .is-sidebar-hidden & {
+      left: 230px;
+    }
+  }
+}
+
+//
+// Sidebar
+//
+
+.admin-sidebar-wrap {
+  position: absolute;
+  top: 0;
+  width: 230px;
+  height: 100%;
+  background-color: #151515;
+  transition: all .25s ease-out;
+
+  @include media-breakpoint-up(sm) {
+    & {
+      left: 0;
+    }
+
+    .is-sidebar-hidden & {
+      left: -230px;
+    }
+  }
+
+  @include media-breakpoint-down(sm) {
+    & {
+      left: -230px;
+    }
+
+    .is-sidebar-hidden & {
+      left: 0;
+    }
+  }
+}
+
+.admin-sidebar {
+  .admin-sidebar-user {
+    height: 79.78px;
+    padding: 1rem;
+    margin-bottom: .75rem;
+    background-color: #1d80d0;
+
+    h5 {
+      max-width: 120px;
+      color: #fff;
+    }
+  }
+
+  .nav {
+    .nav-link {
+      padding-top: .75rem;
+      padding-bottom: .75rem;
+      color: #aaa;
+    }
+    .nav-link:hover {
+      color: #fff;
+      background-color: #222;
+    }
+    .nav-link.disabled {
+      pointer-events: none;
+      color: rgba(255,255,255,.25);
+    }
+    .nav-link.active {
+      font-weight: bold;
+      color: #fff;
+    }
+
+    .nav-link.dropdown-toggle::after {
+      border: 0;
+    }
+    .nav-link.dropdown-toggle.collapsed::after {
+      position: relative;
+      width: auto;
+      height: auto;
+      margin-left: .25rem;
+      font-family: FontAwesome;
+      font-size: 11px;
+      font-weight: bold;
+      content: "\f053";
+    }
+    .nav-link.dropdown-toggle:not(.collapsed)::after {
+      position: relative;
+      width: auto;
+      height: auto;
+      margin-left: .25rem;
+      font-family: FontAwesome;
+      font-size: 11px;
+      font-weight: bold;
+      content: "\f078";
+    }
+
+    .nav {
+      background-color: #282a2b;
+    }
+    .nav .nav-link {
+      padding-top: .5rem;
+      padding-bottom: .5rem;
+      background-color: transparent !important;
+    }
+  }
+}
+
+//
+// Main
+//
+
+.admin-main {
+  padding: 1rem;
+  background-color: #fff;
+}
+
+// Title with background
+
+.admin-bg-title {
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  background: transparent url(/images/dots_pat.png) center center repeat-x;
+
+  > h1,
+  > h2,
+  > h3,
+  > h4,
+  > h5,
+  > h6 {
+    display: inline-block;
+    padding: 0 1rem;
+    margin: 0 1rem;
+    background-color: #fff;
+  }
+}
+
+// Card + media
+
+.admin-card-media {
+  height: 100%;
+
+  .fa-media-avatar {
+    font-size: 3rem;
+  }
+}
+
+//
+// Navbar
+//
+
+.admin-navbar {
+  box-shadow: none;
+
+  .admin-navbar-icon-badge {
+    position: relative;
+    display: inline-sblock;
+
+    .badge {
+      position: absolute;
+      top: -13px;
+      right: -10px;
+      font-size: 9px;
+    }
+  }
+
+  .navbar-nav > .nav-item > .nav-link-icon-badge {
+    padding-right: 18px !important;
+    padding-left: 18px !important;
+  }
+}
