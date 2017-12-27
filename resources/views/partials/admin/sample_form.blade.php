@@ -33,7 +33,9 @@
                       <label for="inputState">State</label>
                       <select id="inputState" class="form-control">
                         <option selected>Choose...</option>
-                        <option>...</option>
+                        <option>Cikeusik</option>
+                        <option>Cikertawana</option>
+                        <option>Cibeo</option>
                       </select>
                   </div>
                   <div class="form-group col-md-2">
