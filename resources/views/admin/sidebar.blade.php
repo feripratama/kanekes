@@ -1,10 +1,11 @@
 <div class="admin-sidebar-wrap">
     <nav class="admin-sidebar">
         <div class="media admin-sidebar-user">
-            <img class="mr-3" src="{{ asset('images/avatar.png') }}" width="48" height="48" alt="">
+            <a href="#non"><img class="mr-3" src="{{ asset('images/avatar.png') }}" width="48" height="48" alt=""></a>
             <div class="media-body">
                 <h5 class="text-truncate mt-0 mb-1" title="John Doe">John Doe</h5>
-                <div><a class="btn btn-danger btn-sm" href="#non">Sign out</a></div>
+                <hr class="my-1">
+                <div><a class="text-white" href="#non"><i class="fa fa-sign-out mr-2" aria-hidden="true"></i>Sign out</a></div>
             </div>
         </div>
         <ul class="nav flex-column">
