@@ -1,6 +1,6 @@
 <nav class="admin-navbar navbar navbar-expand-md navbar-dark bg-primary d-flex flex-nowrap justify-content-start">
-    <button class="navbar-toggler d-block" type="button" data-toggle="admin-sidebar" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+    <button class="btn btn-light btn-sm" type="button" data-toggle="admin-sidebar" aria-label="Toggle navigation">
+        <i class="fa fa-bars" aria-hidden="true"></i>
     </button>
     <a class="navbar-brand px-3 ml-2" href="/">@yield('navbar-title')</a>
     <div class="collapse navbar-collapse">
