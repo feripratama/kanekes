@@ -17,6 +17,7 @@
 
 .admin-content-wrap {
   position: relative;
+  margin-top: 5rem;
   transition: all .25s ease-out;
 
   @include media-breakpoint-up(sm) {
@@ -46,10 +47,11 @@
 //
 
 .admin-sidebar-wrap {
-  position: absolute;
+  position: fixed;
   top: 0;
+  bottom: 0;
+  z-index: 1030;
   width: 230px;
-  height: 100%;
   background-color: #151515;
   transition: all .25s ease-out;
 
@@ -76,9 +78,9 @@
 
 .admin-sidebar {
   .admin-sidebar-user {
-    height: 79.78px;
+    height: 5rem;
     padding: 1rem;
-    margin-bottom: .75rem;
+    margin-bottom: 0;
     background-color: #1d80d0;
 
     h5 {
@@ -88,6 +90,15 @@
     hr {
       border-top: 2px solid rgba(255,255,255,.45);
     }
+  }
+
+  .admin-sidebar-nav-wrap {
+    position: fixed;
+    top: 5rem;
+    bottom: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 230px;
   }
 
   .nav {
@@ -145,6 +156,56 @@
 }
 
 //
+// Navbar
+//
+
+.admin-navbar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1030;
+  height: 5rem;
+  transition: all .25s ease-out;
+
+  .admin-navbar-icon-badge {
+    position: relative;
+    display: inline-sblock;
+
+    .badge {
+      position: absolute;
+      top: -13px;
+      right: -10px;
+      font-size: 9px;
+    }
+  }
+
+  .navbar-nav > .nav-item > .nav-link-icon-badge {
+    padding-right: 18px !important;
+    padding-left: 18px !important;
+  }
+
+  @include media-breakpoint-up(sm) {
+    & {
+      left: 230px;
+    }
+
+    .is-sidebar-hidden & {
+      left: 0;
+    }
+  }
+
+  @include media-breakpoint-down(sm) {
+    & {
+      left: 0;
+    }
+
+    .is-sidebar-hidden & {
+      left: 230px;
+    }
+  }
+}
+
+//
 // Main
 //
 
@@ -181,30 +242,5 @@
 
   .fa-media-avatar {
     font-size: 3rem;
-  }
-}
-
-//
-// Navbar
-//
-
-.admin-navbar {
-  box-shadow: none;
-
-  .admin-navbar-icon-badge {
-    position: relative;
-    display: inline-sblock;
-
-    .badge {
-      position: absolute;
-      top: -13px;
-      right: -10px;
-      font-size: 9px;
-    }
-  }
-
-  .navbar-nav > .nav-item > .nav-link-icon-badge {
-    padding-right: 18px !important;
-    padding-left: 18px !important;
   }
 }
