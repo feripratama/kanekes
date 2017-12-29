@@ -1,3 +1,4 @@
+
 @extends('layouts.landing-page')
 
 {{-- Title --}}
