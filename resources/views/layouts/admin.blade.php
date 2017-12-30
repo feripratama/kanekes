@@ -13,7 +13,7 @@
         <link rel="stylesheet" href="{{ asset('fonts/font-awesome/css/font-awesome.min.css') }}">
     </head>
     <body class="page-admin">
-        <div class="admin-wrapper active">
+        <div class="admin-wrapper">
             @include('includes.admin.sidebar')
             @include('includes.admin.navbar')
 
