@@ -18,7 +18,9 @@
             @include('admin.navbar')
 
             <div class="admin-content-wrap">
-                @include('admin.main')
+                <main class="admin-main">
+                    @yield('content')
+                </main>
 
                 @include('admin.footer')
             </div>

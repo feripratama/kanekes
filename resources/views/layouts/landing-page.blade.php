@@ -17,7 +17,9 @@
 
         @include('landing-page.header')
 
-        @include('landing-page.main')
+        <main class="landing-main">
+            @yield('content')
+        </main>
 
         @include('landing-page.footer')
 
