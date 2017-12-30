@@ -14,15 +14,15 @@
     </head>
     <body class="page-admin">
         <div class="admin-wrapper active">
-            @include('admin.sidebar')
-            @include('admin.navbar')
+            @include('includes.admin.sidebar')
+            @include('includes.admin.navbar')
 
             <div class="admin-content-wrap">
                 <main class="admin-main">
                     @yield('content')
                 </main>
 
-                @include('admin.footer')
+                @include('includes.admin.footer')
             </div>
         </div>
 
