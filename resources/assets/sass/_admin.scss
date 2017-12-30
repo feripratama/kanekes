@@ -13,12 +13,12 @@
 
 .admin-content-wrap {
   position: relative;
-  margin-top: 5rem;
+  margin-top: $admin-navbar-height;
   transition: all .25s ease-out;
 
   @include media-breakpoint-up(sm) {
     & {
-      margin-left: 230px;
+      margin-left: $admin-sidebar-width;
     }
 
     .is-sidebar-hidden & {
@@ -33,7 +33,7 @@
     }
 
     .is-sidebar-hidden & {
-      left: 230px;
+      left: $admin-sidebar-width;
     }
   }
 }
@@ -47,7 +47,7 @@
   top: 0;
   bottom: 0;
   z-index: 1030;
-  width: 230px;
+  width: $admin-sidebar-width;
   background-color: #151515;
   transition: all .25s ease-out;
 
@@ -57,13 +57,13 @@
     }
 
     .is-sidebar-hidden & {
-      left: -230px;
+      left: -$admin-sidebar-width;
     }
   }
 
   @include media-breakpoint-down(sm) {
     & {
-      left: -230px;
+      left: -$admin-sidebar-width;
     }
 
     .is-sidebar-hidden & {
@@ -74,7 +74,7 @@
 
 .admin-sidebar {
   .admin-sidebar-user {
-    height: 5rem;
+    height: $admin-navbar-height;
     padding: 1rem;
     margin-bottom: 0;
     background-color: #1d80d0;
@@ -90,11 +90,11 @@
 
   .admin-sidebar-nav-wrap {
     position: fixed;
-    top: 5rem;
+    top: $admin-navbar-height;
     bottom: 0;
     overflow-x: hidden;
     overflow-y: auto;
-    width: 230px;
+    width: $admin-sidebar-width;
   }
 
   .nav {
@@ -160,12 +160,12 @@
   top: 0;
   right: 0;
   z-index: 1030;
-  height: 5rem;
+  height: $admin-navbar-height;
   transition: all .25s ease-out;
 
   .admin-navbar-icon-badge {
     position: relative;
-    display: inline-sblock;
+    display: inline-block;
 
     .badge {
       position: absolute;
@@ -182,7 +182,7 @@
 
   @include media-breakpoint-up(sm) {
     & {
-      left: 230px;
+      left: $admin-sidebar-width;
     }
 
     .is-sidebar-hidden & {
@@ -196,7 +196,7 @@
     }
 
     .is-sidebar-hidden & {
-      left: 230px;
+      left: $admin-sidebar-width;
     }
   }
 }

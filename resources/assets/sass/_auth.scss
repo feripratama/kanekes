@@ -5,20 +5,20 @@
 }
 
 .form-auth {
-  padding: 15px;
+  padding: $form-auth-padding;
   margin: 0 auto;
-  background-color: #fff;
-  border: 1px solid #ddd;
-  box-shadow: 0 0 1px rgba(0,0,0,.45);
+  background-color: $form-auth-bg-color;
+  border: $form-auth-border-width solid $form-auth-border-color;
+  box-shadow: $form-auth-box-shadow;
 
   &.form-auth-sm {
-    max-width: 330px;
+    max-width: $form-auth-sm-max-width;
   }
   &.form-auth-md {
-    max-width: 450px;
+    max-width: $form-auth-md-max-width;
   }
   &.form-auth-lg {
-    max-width: 600px;
+    max-width: $form-auth-lg-max-width;
   }
 
   .form-auth-heading {
