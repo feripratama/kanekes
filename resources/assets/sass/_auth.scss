@@ -1,0 +1,28 @@
+.auth-page {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #eee;
+}
+
+.form-auth {
+  padding: 15px;
+  margin: 0 auto;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 1px rgba(0,0,0,.45);
+
+  &.form-auth-sm {
+    max-width: 330px;
+  }
+  &.form-auth-md {
+    max-width: 450px;
+  }
+  &.form-auth-lg {
+    max-width: 600px;
+  }
+
+  .form-auth-heading {
+    margin-bottom: 15px;
+    text-align: center;
+  }
+}
