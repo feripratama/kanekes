@@ -1,6 +1,6 @@
 <section class="landing-section-sm landing-section-4">
     <div class="container">
-        <div class="dengdek dengdek-light" style="background-color: #ffc107; box-shadow: 0 0 10px rgba(0,0,0,.5);">
+        <div class="dengdek text-dark" style="background-color: #ffc107; box-shadow: 0 0 10px rgba(0,0,0,.5);">
             <div class="dengdek-image">
                 <img src="{{ asset('images/baduy/11.jpg') }}">
             </div><!-- /.dengdek-image -->

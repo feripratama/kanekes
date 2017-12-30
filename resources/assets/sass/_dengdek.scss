@@ -1,6 +1,5 @@
 .dengdek {
   position: relative;
-  background-color: #ddd;
   border-radius: .25rem;
 
   @include clearfix();
@@ -15,13 +14,6 @@
 }
 
 .dengdek-content {
-  &:first-child {
-    padding-bottom: 0;
-  }
-  + .dengdek-image {
-    padding-top: 0;
-  }
-
   .dengdek-title {
     margin-top: 0;
     margin-bottom: 1rem;
@@ -36,15 +28,6 @@
     height: auto;
     border-radius: .5rem;
     box-shadow: 0 17px 50px rgba(0,0,0,.19);
-  }
-
-  @include media-breakpoint-down(md) {
-    &:first-child {
-      padding-bottom: 0;
-    }
-    + .dengdek-content {
-      padding-top: 0;
-    }
   }
 }
 
@@ -78,20 +61,4 @@
       top: -150px;
     }
   }
-}
-
-//
-// Light
-//
-
-.dengdek-light {
-  color: #333 !important;
-}
-
-//
-// Dark
-//
-
-.dengdek-dark {
-  color: #fff !important;
 }

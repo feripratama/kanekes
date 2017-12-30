@@ -4,18 +4,14 @@ Route::get('/', function () {
     return view('landing-page');
 });
 
-Route::get('/admin', function () {
+Route::get('admin', function () {
     return view('admin');
 });
 
-Route::get('/about', function () {
-    return view('about');
+Route::get('login', function () {
+    return view('auth.login');
 });
 
-Route::get('/disclaimer', function () {
-    return view('disclaimer');
-});
-
-Route::get('/terms-of-use', function () {
-    return view('terms-of-use');
+Route::get('register', function () {
+    return view('auth.register');
 });
