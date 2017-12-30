@@ -10,6 +10,7 @@
 @section('content')
   @include('partials.admin.sample_alert')
   @include('partials.admin.sample_card-media')
+  @include('partials.admin.sample_mumbul')
   @include('partials.admin.sample_table')
   @include('partials.admin.sample_list-group')
   @include('partials.admin.sample_card')

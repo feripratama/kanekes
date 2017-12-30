@@ -12,14 +12,16 @@
         <link rel="stylesheet" href="{{ asset('css/app.css') }}">
         <link rel="stylesheet" href="{{ asset('fonts/font-awesome/css/font-awesome.min.css') }}">
     </head>
-    <body>
-        @include('landing-page.navbar')
+    <body class="landing-page">
+        @include('includes.landing-page.navbar')
 
-        @include('landing-page.header')
+        @include('includes.landing-page.header')
 
-        @include('landing-page.main')
+        <main class="landing-main">
+            @yield('content')
+        </main>
 
-        @include('landing-page.footer')
+        @include('includes.landing-page.footer')
 
         <script src="{{ asset('js/app.js') }}"></script>
     </body>
