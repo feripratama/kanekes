@@ -7,15 +7,3 @@ Route::get('/', function () {
 Route::get('/admin', function () {
     return view('admin');
 });
-
-Route::get('/about', function () {
-    return view('about');
-});
-
-Route::get('/disclaimer', function () {
-    return view('disclaimer');
-});
-
-Route::get('/terms-of-use', function () {
-    return view('terms-of-use');
-});
