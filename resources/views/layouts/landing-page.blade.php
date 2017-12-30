@@ -12,7 +12,7 @@
         <link rel="stylesheet" href="{{ asset('css/app.css') }}">
         <link rel="stylesheet" href="{{ asset('fonts/font-awesome/css/font-awesome.min.css') }}">
     </head>
-    <body>
+    <body class="landing-page">
         @include('includes.landing-page.navbar')
 
         @include('includes.landing-page.header')
